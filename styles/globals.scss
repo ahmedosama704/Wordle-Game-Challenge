@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+* {
+  outline: 0 !important;
+  box-sizing: border-box;
+}
+
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  outline: 0;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  text-transform: capitalize;
+  background: transparent;
+  outline: none !important;
+  border-color: transparent;
+  cursor: pointer;
+  cursor: pointer;
+  border-radius: 9px;
+  background: #850b4b;
+  padding: 15px 20px;
+  width: 100%;
+  margin: 20px 0px;
+  color: #fff;
+  transition: all 1s;
+  min-height: 50px;
+  position: relative;
+  min-width: 180px;
+
+  @media (max-width: 769px) {
+  }
+
+  &:hover,
+  &:active {
+    background: #4e062c;
+  }
+}
+
+input {
+  width: 100%;
+  border-radius: 9px;
+}
+h1 {
+  font-size: 4vw;
+  color: #000;
+  margin: 10px 0px;
+  text-align: center;
+  white-space: nowrap;
+  @media (max-width: 769px) {
+    font-size: 8vw;
+    white-space: initial;
+    margin-top: 50px;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+.keyboard {
+  padding: 50px 20%;
+  @media (max-width: 769px) {
+    padding: 20px 5%;
+  }
+}
+.board {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.chooseLevel {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+  @media (max-width: 769px) {
+    display: block;
+  }
+  > div {
+    padding: 4vw;
+  }
+}
+.playAgain {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 20px 10vw;
+  @media (max-width: 769px) {
+    display: block;
+  }
+}
+.line {
+  display: flex;
+  gap: 10px;
+  margin: auto;
+}
+
+.tile {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.correct {
+  background-color: lightgreen;
+}
+
+.incorrect {
+  background-color: lightgrey;
+}
+
+.close {
+  background-color: yellow;
+}
